@@ -2,6 +2,11 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from pathlib import Path
+
+print(__file__)  # Prints the full path of the script file
+current_dir = Path(__file__).parent # Gets the directory containing the script
+print(current_dir)  # Prints the script's directory
 
 # Load data from a CSV file dumped in the repo
 data = pd.read_csv('data.csv')
